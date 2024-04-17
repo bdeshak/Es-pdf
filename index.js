@@ -1,13 +1,16 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mergeRouter = require('./routes/merge');
+/*
 const splitRouter = require('./routes/split');
 const editorRouter = require('./routes/editor');
 const watermarkRouter = require('./routes/watermark');
 const deleteRouter = require('./routes/delete');
 const pageNoRoute = require('./routes/pageno');
 const rotatePdf = require('./routes/rotate');
+*/
 const pdfToWord = require('./routes/pdf-to-word')
+/*
 const pdfToExcel = require('./routes/pdftoexcel')
 const pdfToPpt = require('./routes/pdf-to-ppt')
 const pdfToPng = require('./routes/pdf-to-png')
@@ -16,6 +19,7 @@ const pdfToJson = require('./routes/pdf-to-json');
 const pdfToTiff = require('./routes/pdf-to-tiff')
 const pdfToTxt = require('./routes/pdf-to-txt')
 const wordToPdf = require('./routes/word-to-pdf')
+*/
 const cors = require('cors');
 
 const app = express();
