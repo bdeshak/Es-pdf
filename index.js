@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const pdfToWord = require('./routes/pdf-to-word')
 
-const mergeRouter = require('./routes/merge');
+//const mergeRouter = require('./routes/merge');
 /*
 const splitRouter = require('./routes/split');
 const editorRouter = require('./routes/editor');
@@ -35,7 +35,7 @@ app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(pdfToWord);
-app.use(mergeRouter);
+//app.use(mergeRouter);
 /*
 app.use(splitRouter);
 app.use(editorRouter);
