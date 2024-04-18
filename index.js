@@ -34,6 +34,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(pdfToWord);
 app.use(mergeRouter);
 /*
 app.use(splitRouter);
@@ -43,7 +44,7 @@ app.use(deleteRouter);
 app.use(pageNoRoute);
 app.use(rotatePdf);
 */
-app.use(pdfToWord);
+
 /*
 app.use(pdfToExcel);
 app.use(pdfToPpt);
