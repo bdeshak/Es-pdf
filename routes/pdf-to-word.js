@@ -6,7 +6,7 @@ const multer  = require('multer');
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-router.get('/pdf-to-word', (req, res) => {
+router.get('/', (req, res) => {
     res.render('pdf-to-word');
 });
 
