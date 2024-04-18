@@ -1,7 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const mergeRouter = require('./routes/merge');
 /*
+const mergeRouter = require('./routes/merge');
+
 const splitRouter = require('./routes/split');
 const editorRouter = require('./routes/editor');
 const watermarkRouter = require('./routes/watermark');
