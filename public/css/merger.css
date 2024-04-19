@@ -1,4 +1,6 @@
-
+a:hover{
+color: #EE0BFF ! important:
+}
 input[type="file"] {
     height: 0;
     width: 0;
