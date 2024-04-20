@@ -75,7 +75,7 @@ app.get('/blog', function (req, res) {
 });
 
 app.get('/sitemap.xml', function (req, res) {
-    res.render(path.join(__dirname, 'sitemap.xml'));
+    res.sendFile(path.join(__dirname, 'sitemap.xml'));
 });
 
 
