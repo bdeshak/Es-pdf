@@ -58,8 +58,20 @@ app.use(wordToPdf)
 app.use(express.static(path.join(__dirname, 'public')));
 
 //route
-app.get('/pdftoword.svg', function (req, res) {
-    res.sendFile(path.join(__dirname, 'pdftoword.svg'));
+app.get('/contact', function (req, res) {
+    res.rander(path.join(__dirname, 'contact'));
+});
+
+app.get('/privacy', function (req, res) {
+    res.rander(path.join(__dirname, 'privacy'));
+});
+
+app.get('/terms', function (req, res) {
+    res.rander(path.join(__dirname, 'terms'));
+});
+
+app.get('/blog', function (req, res) {
+    res.rander(path.join(__dirname, 'blog'));
 });
 
 
