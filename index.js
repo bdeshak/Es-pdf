@@ -57,6 +57,13 @@ app.use(wordToPdf)
 */
 app.use(express.static(path.join(__dirname, 'public')));
 
+//route
+app.get('/pdftoword.svg', function (req, res) {
+    res.sendFile(path.join(__dirname, 'pdftoword.svg'));
+});
+
+
+//files
 app.get('/pdftoword.svg', function (req, res) {
     res.sendFile(path.join(__dirname, 'pdftoword.svg'));
 });
