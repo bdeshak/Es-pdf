@@ -57,6 +57,16 @@ app.use(wordToPdf)
 */
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/pdftoword.svg', function (req, res) {
+    res.sendFile(path.join(__dirname, 'pdftoword.svg'));
+});
+app.get('/pdftoword.ico', function (req, res) {
+    res.sendFile(path.join(__dirname, 'pdftoword.ico'));
+});
+app.get('/pdftoword.png', function (req, res) {
+    res.sendFile(path.join(__dirname, 'pdftoword.png'));
+});
+        
 app.listen(8080, () => {
   console.log('Server is running on port 8080');
 });
