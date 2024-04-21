@@ -78,6 +78,11 @@ app.get('/sitemap.xml', function (req, res) {
     res.sendFile(path.join(__dirname, 'sitemap.xml'));
 });
 
+app.get('/ads.txt', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ads.txt'));
+});
+
+
 
 
 //files
