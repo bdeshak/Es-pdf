@@ -11,7 +11,7 @@ const deleteRouter = require('./routes/delete');
 const pageNoRoute = require('./routes/pageno');
 const rotatePdf = require('./routes/rotate');
 */
-
+const editorRouter = require('./routes/editor');
 /*
 const pdfToExcel = require('./routes/pdftoexcel')
 const pdfToPpt = require('./routes/pdf-to-ppt')
