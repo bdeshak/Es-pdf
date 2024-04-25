@@ -12,8 +12,9 @@ const pageNoRoute = require('./routes/pageno');
 const rotatePdf = require('./routes/rotate');
 */
 const editorRouter = require('./routes/editor');
-/*
 const pdfToExcel = require('./routes/pdftoexcel')
+/*
+
 const pdfToPpt = require('./routes/pdf-to-ppt')
 const pdfToPng = require('./routes/pdf-to-png')
 const pdfToJpg = require('./routes/pdf-to-jpg')
@@ -36,6 +37,7 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(pdfToWord);
 app.use(editorRouter);
+app.use(pdfToExcel);
 //app.use(mergeRouter);
 /*
 app.use(splitRouter);
