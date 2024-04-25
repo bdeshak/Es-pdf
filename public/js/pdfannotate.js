@@ -2,7 +2,7 @@
  * PDFAnnotate v1.0.1
  * Author: Ravisha Heshan
  */
-
+alert(766);
 var PDFAnnotate = function(container_id, url, options = {}) {
 	this.number_of_pages = 0;
 	this.pages_rendered = 0;
