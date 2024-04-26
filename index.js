@@ -1,25 +1,28 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const pdfToWord = require('./routes/pdf-to-word')
+const express = require('express');
+const bodyParser = require('body-parser');
+const pdfToWord = require('./routes/pdf-to-word');
+const editorRouter = require('./routes/editor');
+const pdfToExcel = require('./routes/pdftoexcel');
+
+const splitRouter = require('./routes/split');
+const deleteRouter = require('./routes/delete');
+const pageNoRoute = require('./routes/pageno');
+const pdfToPpt = require('./routes/pdf-to-ppt');
+const pdfToPng = require('./routes/pdf-to-png');
+const pdfToTiff = require('./routes/pdf-to-tiff');
 
 //const mergeRouter = require('./routes/merge');
 /*
-const splitRouter = require('./routes/split');
-const editorRouter = require('./routes/editor');
+
+
 const watermarkRouter = require('./routes/watermark');
-const deleteRouter = require('./routes/delete');
-const pageNoRoute = require('./routes/pageno');
 const rotatePdf = require('./routes/rotate');
 */
-const editorRouter = require('./routes/editor');
-const pdfToExcel = require('./routes/pdftoexcel')
-/*
 
-const pdfToPpt = require('./routes/pdf-to-ppt')
-const pdfToPng = require('./routes/pdf-to-png')
+
+/*
 const pdfToJpg = require('./routes/pdf-to-jpg')
 const pdfToJson = require('./routes/pdf-to-json');
-const pdfToTiff = require('./routes/pdf-to-tiff')
 const pdfToTxt = require('./routes/pdf-to-txt')
 const wordToPdf = require('./routes/word-to-pdf')
 */
@@ -38,25 +41,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(pdfToWord);
 app.use(editorRouter);
 app.use(pdfToExcel);
-
+app.use(splitRouter);
+app.use(pdfToPng);
+app.use(pageNoRoute);
+app.use(deleteRouter);
+app.use(pdfToTiff)
+app.use(pdfToTxt);
+app.use(pdfToPpt);
 //app.use(mergeRouter);
 /*
-app.use(splitRouter);
-app.use(editorRouter);
-app.use(watermarkRouter);
-app.use(deleteRouter);
-app.use(pageNoRoute);
-app.use(rotatePdf);
 */
 
 /*
-app.use(pdfToExcel);
-app.use(pdfToPpt);
-app.use(pdfToPng);
+app.use(watermarkRouter);
+app.use(rotatePdf);
 app.use(pdfToJpg);
 app.use(pdfToJson)
-app.use(pdfToTiff)
-app.use(pdfToTxt);
 app.use(wordToPdf)
 */
 app.use(express.static(path.join(__dirname, 'public')));
