@@ -11,19 +11,21 @@ const pdfToPpt = require('./routes/pdf-to-ppt');
 const pdfToPng = require('./routes/pdf-to-png');
 const pdfToTiff = require('./routes/pdf-to-tiff');
 const pdfToTxt = require('./routes/pdf-to-txt');
+const pdfToJpg = require('./routes/pdf-to-jpg')
+const pdfToJson = require('./routes/pdf-to-json');
+const wordToPdf = require('./routes/word-to-pdf');
+const watermarkRouter = require('./routes/watermark');
+const rotatePdf = require('./routes/rotate');
 //const mergeRouter = require('./routes/merge');
 /*
 
 
-const watermarkRouter = require('./routes/watermark');
-const rotatePdf = require('./routes/rotate');
+
 */
 
 
 /*
-const pdfToJpg = require('./routes/pdf-to-jpg')
-const pdfToJson = require('./routes/pdf-to-json');
-const wordToPdf = require('./routes/word-to-pdf')
+
 */
 const cors = require('cors');
 
@@ -47,16 +49,18 @@ app.use(deleteRouter);
 app.use(pdfToTiff)
 app.use(pdfToTxt);
 app.use(pdfToPpt);
+app.use(pdfToJpg);
+app.use(pdfToJson);
+app.use(wordToPdf);
+app.use(rotatePdf);
+app.use(watermarkRouter);
 //app.use(mergeRouter);
 /*
 */
 
 /*
-app.use(watermarkRouter);
-app.use(rotatePdf);
-app.use(pdfToJpg);
-app.use(pdfToJson)
-app.use(wordToPdf)
+
+
 */
 app.use(express.static(path.join(__dirname, 'public')));
 
