@@ -10,7 +10,7 @@ const pageNoRoute = require('./routes/pageno');
 const pdfToPpt = require('./routes/pdf-to-ppt');
 const pdfToPng = require('./routes/pdf-to-png');
 const pdfToTiff = require('./routes/pdf-to-tiff');
-
+const pdfToTxt = require('./routes/pdf-to-txt');
 //const mergeRouter = require('./routes/merge');
 /*
 
@@ -23,7 +23,6 @@ const rotatePdf = require('./routes/rotate');
 /*
 const pdfToJpg = require('./routes/pdf-to-jpg')
 const pdfToJson = require('./routes/pdf-to-json');
-const pdfToTxt = require('./routes/pdf-to-txt')
 const wordToPdf = require('./routes/word-to-pdf')
 */
 const cors = require('cors');
