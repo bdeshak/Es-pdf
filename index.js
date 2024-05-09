@@ -94,6 +94,10 @@ app.get('/ads.txt', function (req, res) {
     res.sendFile(path.join(__dirname, 'ads.txt'));
 });
 
+    app.get('/ads', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ads.txt'));
+});
+
 
 
 
