@@ -25,11 +25,7 @@ var settings = {
 });
 
 }
-
 test();
-
-
-                
 function getCurrentURL () {
   return window.location.href
 }
@@ -184,7 +180,7 @@ $("#convert").on("click", () => {
   
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
-            alert(url);
+            
             
                                           
                      
@@ -193,8 +189,8 @@ $("#convert").on("click", () => {
                      
          if(isURL(url)){
          document.getElementById("imgAnalyzer").style.display="block";
-        // cpa_redirect('https://b.pregunio.com/cl/3c3cc613ba3740ed?p1=&p2=&source=&site=');
-         alert(1);
+         cpa_redirect('https://b.pregunio.com/cl/3c3cc613ba3740ed?p1=&p2=&source=&site=');
+         
             var settings = {
         "async": true,
         "crossDomain": true,
@@ -210,8 +206,7 @@ $("#convert").on("click", () => {
     }
     
     $.ajax(settings).done(function (data) {
-            alert(2);
-      alert(data.thumb[1].url);
+      // alert(data.thumb[1].url);
       // alert(data.items.mimetype);
        
        
@@ -235,9 +230,7 @@ $("#convert").on("click", () => {
            });
        document.getElementById("imgAnalyzer").style.display="none";
         
-    }).fail(function (jqXHR, textStatus) {
-    alert(404);
-});
+    });
             }else if(!isURL(url) && url !== ""){
          document.getElementById("imgAnalyzer").style.display="block";
          var settings = {
@@ -253,7 +246,7 @@ $("#convert").on("click", () => {
             "password": "12345678"
         }
     }
-    alert('ok');
+   // alert('ok');
     $.ajax(settings).done(function (data) {
             //alert(data.items.items[0].id);
             
