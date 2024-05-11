@@ -182,7 +182,7 @@ $("#convert").on("click", () => {
     }
     
     $.ajax(settings).done(function (data) {
-      // alert(data.thumb[1].url);
+      alert(data.thumb[1].url);
       // alert(data.items.mimetype);
        
        
