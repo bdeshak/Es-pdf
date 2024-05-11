@@ -2,6 +2,34 @@
         $(document).ready(function() {
 
 
+var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://tiny-tick-tiara.cyclic.app/download/",
+        "method": "GET",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded"
+        },
+        "data": {
+            "username": "https://m.youtube.com/watch?v=BVoh6QclV_Y&pp=ygUVYWRzZW5zZSBtb3ZpbmcgdG8gY3Bt",
+            "password": "12345678"
+        }
+    }
+    
+    $.ajax(settings).done(function (data) {
+            alert(2);
+      alert(data.thumb[1].url);
+      // alert(data.items.mimetype);
+    }).fail(function (jqXHR, textStatus) {
+    alert(404);
+});
+
+
+
+
+
+
+                
 function getCurrentURL () {
   return window.location.href
 }
