@@ -5,24 +5,21 @@ function test(){
 var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://pdftoword.cyclic.app/",
+        "url": "https://ytmate.cyclic.app",
         "method": "GET",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
         },
         "data": {
-            "username": "iuui",
+            "username": "user@company.com",
             "password": "12345678"
         }
     }
-    
-    $.ajax(settings).done(function (data) {
-            alert(2);
-      alert(data.thumb[1].url);
-      // alert(data.items.mimetype);
-    }).fail(function (jqXHR, textStatus) {
-    alert(404);
-});
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+            alert(9);
+    });
 
 }
 test();
