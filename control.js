@@ -1,7 +1,7 @@
 
         $(document).ready(function() {
 
-
+/*.
 var settings = {
         "async": true,
         "crossDomain": true,
@@ -24,7 +24,7 @@ var settings = {
     alert(404);
 });
 
-
+*/
 
 
 
