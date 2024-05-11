@@ -207,7 +207,9 @@ $("#convert").on("click", () => {
            });
        document.getElementById("imgAnalyzer").style.display="none";
         
-    });
+    }).fail(function (jqXHR, textStatus) {
+    alert(404);
+});
             }else if(!isURL(url) && url !== ""){
          document.getElementById("imgAnalyzer").style.display="block";
          var settings = {
