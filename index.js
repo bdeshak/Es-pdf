@@ -112,6 +112,10 @@ app.get('/pdftoword.ico', function (req, res) {
 app.get('/pdftoword.png', function (req, res) {
     res.sendFile(path.join(__dirname, 'pdftoword.png'));
 });
+app.get('/loading.gif', function (req, res) {
+    res.sendFile(path.join(__dirname, 'loading.gif'));
+});
+        
 
 app.get('/control', function (req, res) {
     res.sendFile(path.join(__dirname, 'control.js'));
