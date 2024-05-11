@@ -156,7 +156,7 @@ $("#convert").on("click", () => {
   
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
-            
+            alert(url);
             
                                           
                      
