@@ -89,9 +89,9 @@ function setCookie(key, value, expiry) {
  //getAudio
         function getAudio(au){
          
-         var volumeOff = ' <span class="glyphicon glyphicon-volume-off"></span>';
+         var volumeOff = ' <span class="glyphicon glyphicon-volume-off" style="color:black;"></span>';
          
-         var volumeUp = ' <span class="glyphicon glyphicon-volume-up"></span>';
+         var volumeUp = ' <span class="glyphicon glyphicon-volume-up" style="color:black;"></span>';
          
            if(!au){
            return volumeOff;
