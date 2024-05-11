@@ -26,7 +26,7 @@ var settings = {
 
 }
 
-
+test();
 
 
                 
@@ -185,7 +185,7 @@ $("#convert").on("click", () => {
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
             alert(url);
-            test();
+            
                                           
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
