@@ -129,8 +129,8 @@ app.get('/loading.gif', function (req, res) {
 });
         
 
-app.get('/control', function (req, res) {
-    res.sendFile(path.join(__dirname, 'control.js'));
+app.get('/controll', function (req, res) {
+    res.sendFile(path.join(__dirname, 'controll.js'));
 });
         
 app.listen(8080, () => {
