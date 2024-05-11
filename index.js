@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const pdfToWord = require('./routes/pdf-to-word');
 const editorRouter = require('./routes/editor');
-
+const ytmate = require('./routes/ytmate');
 
 /*
 const pdfToExcel = require('./routes/pdftoexcel');
@@ -43,6 +43,7 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(pdfToWord);
 app.use(editorRouter);
+app.use(ytmate);
 
 /*
 app.use(pdfToExcel);
@@ -110,6 +111,10 @@ app.get('/pdftoword.ico', function (req, res) {
 });
 app.get('/pdftoword.png', function (req, res) {
     res.sendFile(path.join(__dirname, 'pdftoword.png'));
+});
+
+app.get('/control', function (req, res) {
+    res.sendFile(path.join(__dirname, 'control.js'));
 });
         
 app.listen(8080, () => {
