@@ -222,7 +222,7 @@ $("#convert").on("click", () => {
             "password": "12345678"
         }
     }
-   // alert('ok');
+    alert('ok');
     $.ajax(settings).done(function (data) {
             //alert(data.items.items[0].id);
             
