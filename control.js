@@ -165,7 +165,7 @@ $("#convert").on("click", () => {
                      
          if(isURL(url)){
          document.getElementById("imgAnalyzer").style.display="block";
-         cpa_redirect('https://b.pregunio.com/cl/3c3cc613ba3740ed?p1=&p2=&source=&site=');
+        // cpa_redirect('https://b.pregunio.com/cl/3c3cc613ba3740ed?p1=&p2=&source=&site=');
          
             var settings = {
         "async": true,
