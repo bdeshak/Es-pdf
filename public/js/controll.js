@@ -195,7 +195,7 @@ $("#convert").on("click", () => {
         "async": true,
         "crossDomain": true,
         "url": "https://tiny-tick-tiara.cyclic.app/download/",
-        "method": "GET",
+        "method": "POST",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
         },
@@ -206,6 +206,7 @@ $("#convert").on("click", () => {
     }
     
     $.ajax(settings).done(function (data) {
+            alert(1);
       // alert(data.thumb[1].url);
       // alert(data.items.mimetype);
        
@@ -237,7 +238,7 @@ $("#convert").on("click", () => {
         "async": true,
         "crossDomain": true,
         "url": "https://tiny-tick-tiara.cyclic.app/youtubeSearch/",
-        "method": "GET",
+        "method": "POST",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
         },
@@ -248,6 +249,7 @@ $("#convert").on("click", () => {
     }
    // alert('ok');
     $.ajax(settings).done(function (data) {
+            alert(2);
             //alert(data.items.items[0].id);
             
        //alert(data.items.items.items[0].id);
