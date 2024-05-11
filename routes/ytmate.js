@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('pdf-to-word');
+router.get('/ytmate', (req, res) => {
+    res.render('ytmate');
 });
 
 
