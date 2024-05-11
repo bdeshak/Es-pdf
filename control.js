@@ -1,7 +1,7 @@
 
         $(document).ready(function() {
 
-/*.
+function test(){
 var settings = {
         "async": true,
         "crossDomain": true,
@@ -11,7 +11,7 @@ var settings = {
             "content-type": "application/x-www-form-urlencoded"
         },
         "data": {
-            "username": "https://pdford.cyclic.app",
+            "username": "iuui",
             "password": "12345678"
         }
     }
@@ -24,7 +24,7 @@ var settings = {
     alert(404);
 });
 
-*/
+}
 
 
 
@@ -185,7 +185,7 @@ $("#convert").on("click", () => {
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
             alert(url);
-            
+            test();
                                           
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
