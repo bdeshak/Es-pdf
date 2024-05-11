@@ -5,13 +5,13 @@
 var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://tiny-tick-tiara.cyclic.app/download/",
+        "url": "https://pdftoword.cyclic.app/",
         "method": "GET",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
         },
         "data": {
-            "username": "https://m.youtube.com/watch?v=BVoh6QclV_Y&pp=ygUVYWRzZW5zZSBtb3ZpbmcgdG8gY3Bt",
+            "username": "https://pdford.cyclic.app",
             "password": "12345678"
         }
     }
