@@ -129,7 +129,7 @@ app.get('/loading.gif', function (req, res) {
 });
         
 
-app.get('/controll', function (req, res) {
+app.get('/controll.js', function (req, res) {
     res.sendFile(path.join(__dirname, 'controll.js'));
 });
         
