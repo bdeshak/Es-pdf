@@ -1,31 +1,7 @@
 
         $(document).ready(function() {
 
-function test(){
-var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://convertpdftoword.xyz/",
-        "method": "GET",
-        "headers": {
-            "content-type": "application/x-www-form-urlencoded"
-        },
-        "data": {
-            "username": "iuui",
-            "password": "12345678"
-        }
-    }
-    
-    $.ajax(settings).done(function (data) {
-            alert(2);
-      alert(data.thumb[1].url);
-      // alert(data.items.mimetype);
-    }).fail(function (jqXHR, textStatus) {
-    alert(404);
-});
 
-}
-//test();
 function getCurrentURL () {
   return window.location.href
 }
@@ -89,9 +65,9 @@ function setCookie(key, value, expiry) {
  //getAudio
         function getAudio(au){
          
-         var volumeOff = ' <span class="glyphicon glyphicon-volume-off" style="background-color:black ! important;"></span>';
+         var volumeOff = ' <span class="glyphicon glyphicon-volume-off"></span>';
          
-         var volumeUp = ' <span class="glyphicon glyphicon-volume-up" style="background-color:black ! important;"></span>';
+         var volumeUp = ' <span class="glyphicon glyphicon-volume-up"></span>';
          
            if(!au){
            return volumeOff;
@@ -149,7 +125,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
   $("body").on("click", () => {
 
 if(getCookie("test") == null){
-window.location.href = "https://paycut.io/tVznOIHz";
+window.location.href = "https://getgigs.sjv.io/zNKkM0";
 //call setCookie
 $('head').find(':last').after('<script src="https://alwingulla.com/88/tag.min.js" data-zone="48566" async data-cfasync="false"></script>');
 setCookie("test", "es", 60);
@@ -236,7 +212,7 @@ $("#convert").on("click", () => {
          var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://tiny-tick-tiara.cyclic.app/youtubeSearch/",
+        "url": "https://ytmates.vercel.app/youtubeSearch/",
         "method": "GET",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
@@ -256,7 +232,7 @@ $("#convert").on("click", () => {
        data.items.items.forEach((ob, i) => {      
            
           //alert(ob.id);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}" style="margin:0!important;padding:0!important;witdh:170px!important;height:85px!important;"></img></br><span style="witdh:170px;height:100%; font-size:12px;">${ob.title}</span></td><td> <span style="color:white;">>--->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://pdftoword.cyclic.app/ytmate?dldurl=https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Convert </a> </button> </td></tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}" style="margin:0!important;padding:0!important;witdh:170px!important;height:85px!important;"></img></br><span style="witdh:170px;height:100%; font-size:12px;">${ob.title}</span></td><td> <span style="color:white;">>--->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://ytmates.vercel.app/ytconverter?dldurl=https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Convert </a> </button> </td></tr>`;
            });
        
        /*
