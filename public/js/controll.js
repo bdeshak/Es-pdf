@@ -158,7 +158,7 @@ $("#convert").on("click", () => {
             const url = $("input:text").val();
             
             
-                                          
+                                          alert(8);
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
                      
@@ -185,7 +185,7 @@ $("#convert").on("click", () => {
       // alert(data.thumb[1].url);
       // alert(data.items.mimetype);
        
-       
+       alert(9);
        
        
       try{
