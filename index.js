@@ -84,15 +84,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //route
 app.get('/contact', function (req, res) {
-    res.render(path.join(__dirname, 'contact'));
+    res.render(path.join(__dirname, 'contact.ejs'));
 });
 
 app.get('/privacy', function (req, res) {
-    res.render(path.join(__dirname, 'privacy'));
+    res.render(path.join(__dirname, 'privacy.ejs'));
 });
 
 app.get('/terms', function (req, res) {
-    res.render(path.join(__dirname, 'terms'));
+    res.render(path.join(__dirname, 'terms.ejs'));
 });
 
 app.get('/blog', function (req, res) {
