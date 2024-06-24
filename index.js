@@ -24,7 +24,12 @@ const pdfToJpg = require('./routes/pdf-to-jpg')
 
 
 */
+app.get('/gemini', function (req, res) {
+    
 
+res.send(333);
+
+});
 
 /*
 
