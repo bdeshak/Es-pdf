@@ -4,7 +4,7 @@ const pdfToWord = require('./routes/pdf-to-word');
 const editorRouter = require('./routes/editor');
 const ytmate = require('./routes/ytmate');
 const { Gemini } = require('@google-ai/generativeai');
-const fs = require('fs');
+//const fs = require('fs');
 /*
 const pdfToExcel = require('./routes/pdftoexcel');
 const splitRouter = require('./routes/split');
