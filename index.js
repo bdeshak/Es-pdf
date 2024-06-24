@@ -24,12 +24,7 @@ const pdfToJpg = require('./routes/pdf-to-jpg')
 
 
 */
-app.get('/gemini', function (req, res) {
-    
 
-res.send(333);
-
-});
 
 /*
 
@@ -115,7 +110,15 @@ app.get('/ads.txt', function (req, res) {
     app.get('/ads', function (req, res) {
     res.sendFile(path.join(__dirname, 'ads.txt'));
 });
+//end
 
+
+app.get('/gemini', function (req, res) {
+    
+
+res.send(333);
+
+});
 
 
 
