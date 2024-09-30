@@ -92,6 +92,11 @@ app.get('/privacy', function (req, res) {
     res.render(path.join(__dirname, 'privacy.ejs'));
 });
 
+app.get('/getResponse', function (req, res) {
+    res.render(path.join(__dirname, 'GetResponse.ejs'));
+});
+
+
 app.get('/terms', function (req, res) {
     res.render(path.join(__dirname, 'terms.ejs'));
 });
