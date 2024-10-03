@@ -8,13 +8,14 @@
 	--dark-blue: #008CEA;
 	--grey: #828282;
 }
+/*
 p {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
-}
+}*/
 p {
-  text-shadow: 1px 1px;
+  text-shadow: 2px 2px;
 }
 
 * {
