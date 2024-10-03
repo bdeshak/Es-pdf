@@ -9,9 +9,9 @@
 	--grey: #828282;
 }
 
-p {
+p,td,li,h1,h2,h3,h4 {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
 }
 p,td,li,h1,h2,h3,h4{
