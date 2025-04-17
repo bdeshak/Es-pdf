@@ -96,6 +96,9 @@ app.get('/getResponse', function (req, res) {
     res.render(path.join(__dirname, 'GetResponse.ejs'));
 });
 */
+app.get('/meilleures', function (req, res) {
+    res.render(path.join(__dirname, 'Meilleures.ejs'));
+});
 
 app.get('/terms', function (req, res) {
     res.render(path.join(__dirname, 'terms.ejs'));
